@@ -12,7 +12,6 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 shadow-xl"
       style={{ height: `${NAVBAR_HEIGHT}px` }}
     >
-      
       <div className="flex justify-between items-center bg-primary-700  w-full py-3 px-8  text-white">
         <div className="flex  items-center  gap-4 md:gap-6 ">
           <Link
@@ -37,13 +36,13 @@ const Navbar = () => {
             </div>
           </Link>
         </div>
-        <p className="text-primary-300 font-semibold hidden md:block">
+    <p className="text-primary-300 font-semibold hidden md:block">
           Discover your perfect rental apartment with our advanced search
         </p>
         <div className="flex gap-5 items-center ">
           <Link href="/signin">
             <Button
-              className= "text-white bg-transparent hover:bg-white border-white hover:text-primary-700  rounded-lg"
+              className="text-white bg-transparent hover:bg-white border-white hover:text-primary-700  rounded-lg"
               variant="outline"
             >
               Sign In
