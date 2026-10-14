@@ -5,7 +5,9 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors"
 dotenv.config()
-
+import tenantRoutes from "./Routes/tenantRoutes"
+import managerRoutes from "./Routes/managerRoutes"
+import { authMiddleware } from "./middleware/authMiddleware";
 const app= express()
 app.use(express.json());
 app.use(helmet());
@@ -21,6 +23,9 @@ app.get("/test", (req, res) => {
 res.json({ message: "This is test route" });
 });
 
+
+app.use("/tenants",authMiddleware(["tenant"]),tenantRoutes)
+app.use("/managers",authMiddleware(["manager"]),managerRoutes)
 
 const port = Number(process.env.PORT) || 3002;
 

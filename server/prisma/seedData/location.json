@@ -1,92 +1,12 @@
 [
-  {
-    "id": 1,
-    "country": "United States",
-    "city": "Pasadena",
-    "state": "CA",
-    "address": "123 Colorado Blvd",
-    "postalCode": "91105",
-    "coordinates": "POINT(-118.144516 34.147785)"
-  },
-  {
-    "id": 2,
-    "country": "United States",
-    "city": "Santa Monica",
-    "state": "CA",
-    "address": "456 Ocean Ave",
-    "postalCode": "90401",
-    "coordinates": "POINT(-118.496513 34.013654)"
-  },
-  {
-    "id": 3,
-    "country": "United States",
-    "city": "Burbank",
-    "state": "CA",
-    "address": "789 Hollywood Way",
-    "postalCode": "91505",
-    "coordinates": "POINT(-118.328661 34.180839)"
-  },
-  {
-    "id": 4,
-    "country": "United States",
-    "city": "Long Beach",
-    "state": "CA",
-    "address": "101 Pine Ave",
-    "postalCode": "90802",
-    "coordinates": "POINT(-118.192604 33.766720)"
-  },
-  {
-    "id": 5,
-    "country": "United States",
-    "city": "New York",
-    "state": "NY",
-    "address": "555 Manhattan Ave",
-    "postalCode": "10001",
-    "coordinates": "POINT(-74.005941 40.712784)"
-  },
-  {
-    "id": 6,
-    "country": "United States",
-    "city": "Malibu",
-    "state": "CA",
-    "address": "888 Malibu Road",
-    "postalCode": "90265",
-    "coordinates": "POINT(-118.774518 34.025922)"
-  },
-  {
-    "id": 7,
-    "country": "United States",
-    "city": "Glendale",
-    "state": "CA",
-    "address": "777 Brand Blvd",
-    "postalCode": "91203",
-    "coordinates": "POINT(-118.254708 34.142508)"
-  },
-  {
-    "id": 8,
-    "country": "United States",
-    "city": "Torrance",
-    "state": "CA",
-    "address": "555 Torrance Blvd",
-    "postalCode": "90503",
-    "coordinates": "POINT(-118.352575 33.835849)"
-  },
-  {
-    "id": 9,
-    "country": "United States",
-    "city": "Miami",
-    "state": "FL",
-    "address": "1234 Ocean Dr",
-    "postalCode": "33139",
-    "coordinates": "POINT(-80.130045 25.782551)"
-  },
-  {
-    "id": 10,
-    "country": "United States",
-    "city": "Beverly Hills",
-    "state": "CA",
-    "address": "789 Rodeo Dr",
-    "postalCode": "90210",
-    "coordinates": "POINT(-118.400356 34.073620)"
-  }
+  {"id": 1, "country": "India", "city": "Mumbai", "state": "Maharashtra", "address": "Flat 1204, Sea Breeze Heights, Linking Road, Bandra West", "postalCode": "400050", "coordinates": "POINT(72.829500 19.059600)"},
+  {"id": 2, "country": "India", "city": "Mumbai", "state": "Maharashtra", "address": "Plot 7, Hiranandani Gardens, Powai", "postalCode": "400076", "coordinates": "POINT(72.906000 19.117600)"},
+  {"id": 3, "country": "India", "city": "Pune", "state": "Maharashtra", "address": "Lane 5, North Main Road, Koregaon Park", "postalCode": "411001", "coordinates": "POINT(73.893900 18.536200)"},
+  {"id": 4, "country": "India", "city": "Bengaluru", "state": "Karnataka", "address": "12th Main, 100 Feet Road, Indiranagar", "postalCode": "560038", "coordinates": "POINT(77.640800 12.978400)"},
+  {"id": 5, "country": "India", "city": "New Delhi", "state": "Delhi", "address": "Barakhamba Road, Connaught Place", "postalCode": "110001", "coordinates": "POINT(77.216700 28.631500)"},
+  {"id": 6, "country": "India", "city": "Gurugram", "state": "Haryana", "address": "Tower B, DLF Phase 2, Sector 25", "postalCode": "122002", "coordinates": "POINT(77.088000 28.490000)"},
+  {"id": 7, "country": "India", "city": "Hyderabad", "state": "Telangana", "address": "Road No. 36, Jubilee Hills", "postalCode": "500033", "coordinates": "POINT(78.407100 17.432600)"},
+  {"id": 8, "country": "India", "city": "Chennai", "state": "Tamil Nadu", "address": "Lattice Bridge Road, Adyar", "postalCode": "600020", "coordinates": "POINT(80.257400 13.006700)"},
+  {"id": 9, "country": "India", "city": "Ooty", "state": "Tamil Nadu", "address": "Fernhill Road, Udhagamandalam", "postalCode": "643001", "coordinates": "POINT(76.695000 11.410200)"},
+  {"id": 10, "country": "India", "city": "Assagao", "state": "Goa", "address": "Badem Church Road, Assagao", "postalCode": "403507", "coordinates": "POINT(73.766000 15.595000)"}
 ]
