@@ -6,11 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { useGetAuthUserQuery } from "@/state/api";
-import { Bell, MessageCircle, Plus, Search } from "lucide-react";
+import { Bell, MessageCircle, Menu, Plus, Search } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { signOut } from "aws-amplify/auth";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { SidebarTrigger } from "./ui/sidebar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -40,7 +39,7 @@ const Navbar = () => {
         <div className="flex  items-center  gap-4 md:gap-6 ">
           {isDashboardPage && (
             <div className="md:hidden">
-              <SidebarTrigger />
+              <Menu className="h-6 w-6 text-white cursor-pointer" />
             </div>
           )}
           <Link

@@ -33,7 +33,6 @@ export const createManager = async (req: Request, res: Response): Promise<void> 
 
         const { cognitoId, name, email, phoneNumber } = req.body
 
-
         if (!cognitoId || !email || !name) {
             res.status(400).json({ message: "cognitoId, name and email are required" })
             return
@@ -63,3 +62,51 @@ export const createManager = async (req: Request, res: Response): Promise<void> 
     }
 }
 
+export const UpdateManager = async (req: Request, res: Response): Promise<void> => {
+
+    try {
+
+        const cognitoId = req.params.cognitoId as string
+
+        const { name, email, phoneNumber } = req.body
+
+        if (cognitoId != req.user?.id) {
+            res.status(403).json({ message: "You can only update your own profile" })
+            return
+        }
+        if (name !== undefined && typeof name !== "string") {
+            res.status(400).json({ message: "Name must be a string" });
+            return;
+        }
+
+        if (
+            email !== undefined &&
+            (typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+        ) {
+            res.status(400).json({ message: "Invalid email" });
+            return;
+        }
+
+        if (phoneNumber !== undefined && typeof phoneNumber !== "string") {
+            res.status(400).json({ message: "Phone number must be a string" });
+            return;
+        }
+        const UpdatedManagerinfo = await prisma.manager.update({
+            where: { cognitoId },
+            data: {
+                name,
+                email,
+                phoneNumber
+            }
+        })
+
+        res.status(200).json(UpdatedManagerinfo)
+
+    } catch (error: any) {
+        res.status(500).json({
+            message: `Error in Updating manager info ${error.message}`
+        })
+
+    }
+
+}
